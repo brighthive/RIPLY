@@ -45,43 +45,5 @@ class detection(object):
            else:
                array_score.append(0)
         return sum(array_score) / len(array_score)
-        ## check if this array belong to the 3 groups ORGANIZATION PEOPLE LOCATION
-        # ner_tag_classify=[]
-        # tag_val=[]
-        # for title, tag in classified_text:
-        #     tag_val.append([title,tag])
-        #     if tag == "ORGANIZATION" or tag == "PEOPLE" or tag == "LOCATION":
-        #         ner_tag_classify.append(1)
-        #     else:
-        #         ner_tag_classify.append(0)
-        # ner_tag_score=sum(ner_tag_classify)/len(ner_tag_classify)
-        # if ner_tag_score>0:
-        #     print(ner_tag_score)
-        #     print(tag_val)
-
-           # if len(street_value)>0:
-           #      array_score.append(1)
-           # else:
-           #     array_score.append(0)
-
-           # print(street_value)
-
-        # for title,tag in classified_text:
-        #     print(title)
-        #     test_array.append(tag)
-        #     if tag=="ORGANIZATION" or tag=="PEOPLE" or tag=="LOCATION":
-        #         array_score.append(1)
-        #     else:
-        #         array_score.append(0)
-        #     email_value=self.parser.emails(title)
-
-
-        # print(test_array)
-
-
-
-
-        # with open(self.filepath) as filedata:
-        #     reader = csv.reader(filedata)
-
+       
 
