@@ -25,7 +25,7 @@ def get_encoding(path):
     return info.replace("=",":").replace(">","").replace("'","").replace("encoding:","")
 def attract_delimiter(path):
     with open(path,newline='') as f:
-        dialect=csv.Sniffer().sniff(f.read(1024))
+        dialect=csv.Sniffer().sniff(f.read(4000))
     return (dialect.delimiter)
 def hash_check(array_input):
     HASH_TYPE_REGEX = {
